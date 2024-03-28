@@ -1,0 +1,122 @@
+.grid-container {
+    display: grid;
+    /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    height: 100%;
+}
+
+#picture {
+    border-radius: 50%;
+    height: 10%;
+    margin: 1% 1% 1% 10%;
+}
+
+.left-title {
+    background-color: seagreen;
+    color: white;
+    width: max-content;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.title {
+    font-size: x-large;
+}
+
+#header {
+    background-color: #9BB59C;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 4;
+
+    text-align: center;
+}
+
+p#header-name {
+    font-size: xx-large;
+}
+
+#personal-info {
+    background-color: #A5B975;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 8;
+    grid-column-end: 2;
+}
+
+#curriculum {
+    background-color: #79E755;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 4;
+    grid-column-end: 4;
+}
+
+#item-3 {
+
+    background-color: #7DD688;
+    grid-row-start: 4;
+    grid-column-start: 2;
+
+    grid-row-end: 5;
+    grid-column-end: 3;
+
+}
+
+#item-4 {
+
+    background-color: #E6B9DA;
+    grid-row-start: 4;
+    grid-column-start: 3;
+
+    grid-row-end: 6;
+    grid-column-end: 4;
+
+}
+
+#item-5 {
+
+    background-color: #C5CCBB;
+    grid-row-start: 6;
+    grid-column-start: 3;
+
+    grid-row-end: 8;
+    grid-column-end: 4;
+
+}
+
+#item-6 {
+
+    background-color: #EB756D;
+    grid-row-start: 5;
+    grid-column-start: 2;
+
+    grid-row-end: 6;
+    grid-column-end: 3;
+
+}
+
+#item-7 {
+
+    background-color: #75D5FE;
+    grid-row-start: 6;
+    grid-column-start: 2;
+
+    grid-row-end: 7;
+    grid-column-end: 3;
+
+}
+
+#item-8 {
+
+    background-color: #789BA8;
+    grid-row-start: 7;
+    grid-column-start: 2;
+
+    grid-row-end: 8;
+    grid-column-end: 3;
+
+}
