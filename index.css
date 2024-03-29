@@ -21,7 +21,8 @@ body {
 .title {
     font-size: x-large;
     border-bottom: 1px solid black;
-    margin-bottom: 1vh;
+    margin-bottom: 0px;
+    width: 40%;
 }
 
 #header {
@@ -103,12 +104,14 @@ p#header-name {
     width: 100%;
 }
 
-.curriculum-table-position {
+.curriculum-table-position,
+.degree-name {
     font-size: large;
     font-weight: bold;
 }
 
-.curriculum-table-company-specs {
+.curriculum-table-company-specs,
+.degree-location {
     font-size: large;
 }
 
@@ -129,12 +132,67 @@ p#header-name {
     background-color: #C5CCBB;
 }
 
+#certificates-grants-list>p {
+    font-size: large;
+}
+
 #skills {
     background-color: #EB756D;
 }
 
 #languages {
     background-color: #75D5FE;
+}
+
+.language {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.language-level {
+    color: gray;
+    font-weight: bold;
+}
+
+.language-level-5 {
+    color: green;
+}
+
+.language-level-4 {
+    color: greenyellow;
+}
+
+.language-level-3 {
+    color: yellowgreen;
+}
+
+.language-level-2 {
+    color: orange;
+}
+
+.language-level-1 {
+    color: orangered;
+}
+
+.language-name {
+    margin-left: 3em;
+    width: 25%;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.language-level-container {
+    display: flex;
+}
+
+.language-skill {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-evenly;
+    border-left: 1px solid;
+    font-size: large;
 }
 
 #soft-skills {
