@@ -1,0 +1,186 @@
+{
+    "name": "Carlos",
+    "surname": "Clement Bellido",
+    "nationality": "Spanish",
+    "mobile": "+34 622 43 79 63",
+    "mail": "carlos.clement.bellido@gmail.com",
+    "about_me": "I have a diverse background spanning journalism, sports leadership, and technical support. As an interviewer and layout designer I excelled in teamwork, orchestrating interviews with notable figures and contributing to the newspaper’s success.<br><br>In my professional roles, I’ve demonstrated strong communi￾cation skills, from public briefings to technical support interactions with Google’s customers. My experience includes spearheading the establishment of a GCP support site and conducting technical interviews. Beyond my professional pursuits, I am a proficient Linux user with a passion for exploring different distributions, complemented by a solid understanding of Windows systems.",
+    "areas_of_specialization": [
+        {
+            "name": "GCP",
+            "comment": "This is a test"
+        },
+        {
+            "name": ".NET",
+            "comment": "This is a test"
+        },
+        {
+            "name": "Cloud computing",
+            "comment": "This is a test"
+        },
+        {
+            "name": "Android",
+            "comment": "This is a test"
+        },
+        {
+            "name": "Databases",
+            "comment": "This is a test"
+        },
+        {
+            "name": "Big Data",
+            "comment": "This is a test"
+        },
+        {
+            "name": "Data analytics",
+            "comment": "This is a test"
+        },
+        {
+            "name": "ETL",
+            "comment": "This is a test"
+        },
+        {
+            "name": "Web development",
+            "comment": "This is a test"
+        },
+        {
+            "name": "WPF",
+            "comment": "This is a test"
+        },
+        {
+            "name": "MVVM",
+            "comment": "This is a test"
+        },
+        {
+            "name": "MVP",
+            "comment": "This is a test"
+        }
+        
+    ],
+    "interests": [
+        {
+            "name": "Programming",
+            "comment": "This is a test"
+        },
+        {
+            "name": "Handball",
+            "comment": "This is a test"
+        },
+        {
+            "name": "Art",
+            "comment": "This is a test"
+        },
+        {
+            "name": "Cooking",
+            "comment": "This is a test"
+        },
+        {
+            "name": "Motor racing",
+            "comment": "This is a test"
+        },
+        {
+            "name": "Traveling",
+            "comment": "This is a test"
+        },
+        {
+            "name": "Arch",
+            "comment": "This is a test"
+        },
+        {
+            "name": "LaTeX",
+            "comment": "This is a test"
+        }
+    ],
+    "jobs": [
+        {
+            "start_date": "Sep ’21",
+            "end_date": "Current",
+            "position": "Google Cloud Data Engineer (Team leader)",
+            "company": "Webhelp",
+            "company_url": "https://webhelp.com/",
+            "location": "Barcelona",
+            "description": "Provide technical advice for important companies implementing systems on the Google Cloud Platform. The role includes troubleshooting, offering architectural and implementation solutions, and collaborating with the product team to improve the products."
+        },
+        {
+            "start_date": "Feb ’21",
+            "end_date": "Sep ’21",
+            "position": "Big Data Analyst",
+            "company": "Accenture",
+            "company_url": "https://accenture.com/",
+            "location": "Alicante",
+            "description": "Our team had to analyse the sales and the defaulters for Endesa, leaving us to an extensive analysis of all their data and to optimize as much as we were able to."
+        },
+        {
+            "start_date": "Oct ’20",
+            "end_date": "Feb ’21",
+            "position": "Full-stack Engineer",
+            "company": "Everis",
+            "company_url": "https://everis.com/",
+            "location": "Alicante",
+            "description": "I was on charge of keeping up to date the backend service for Naturgy and also the application used by the technicians (android + web)."
+        },
+        {
+            "start_date": "Apr ’20",
+            "end_date": "Oct ’21",
+            "position": "Android Engineer",
+            "company": "",
+            "company_url": "",
+            "location": "Alicante",
+            "description": "Developing an Android application during Covid to keep myself up to date while on home."
+        },
+        {
+            "start_date": "Mar ’20",
+            "end_date": "Mar ’20",
+            "position": "Software Engineer",
+            "company": "Altia",
+            "company_url": "https://altia.com/",
+            "location": "Alicante",
+            "description": "In Altia I worked in a .NET REST API for the European Union Space Programme’s Copernicus."
+        }
+    ],
+    "degrees": [
+        {
+            "name": "Multiplatform Application Development",
+            "location": "Alicante"
+        },
+        {
+            "name": "Scientific Baccalaureate",
+            "location": "Alicante"
+        }
+    ],
+    "certificates_grants": [
+        {
+            "name": "Associate Cloud Engineer (GCP)",
+            "completion_date": "2021"
+        }
+    ],
+    "languages": [
+        {
+            "language": "Spanish",
+            "cambridge_level": "Native",
+            "positive_points": "mother tongue",
+            "negative_points": "",
+            "language_level": ""
+        },
+        {
+            "language": "English",
+            "cambridge_level": "C2",
+            "positive_points": "● ● ● ● ●",
+            "negative_points": "",
+            "language_level": "5"
+        },
+        {
+            "language": "Valencian/Catalan",
+            "cambridge_level": "C2",
+            "positive_points": "● ● ● ● ●",
+            "negative_points": "",
+            "language_level": "5"
+        },
+        {
+            "language": "French",
+            "cambridge_level": "A2",
+            "positive_points": "● ●",
+            "negative_points": "● ● ●",
+            "language_level": "2"
+        }
+    ]
+}

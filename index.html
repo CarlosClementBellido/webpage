@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carlos Clement Bellido</title>
     <link rel="stylesheet" href="index.css">
+    <script src="cv.json" type="application/json"></script>
+    <script type="module" src="scripts/main.js"></script>
 </head>
 
 <body>
     <div id="header">
-        <p id="header-name">Carlos <b>Clement Bellido</b></p>
+        <p id="header-name" class="r">[[name]] <b>[[surname]]</b></p>
     </div>
 
     <div id="cv-container">
@@ -20,55 +22,28 @@
 
             <div id="personal">
                 <p class="left-title">Personal</p>
-                <p>Carlos <b>Clement Bellido</b></p>
-                <p>Nationality: <b>Spanish</b></p>
-                <p>📱: <b>+34 622 43 79 63</b></p>
-                <p>carlos.clement.bellido<b>@gmail.com</b></p>
+                <p class="r">[[name]] <b>[[surname]]</b></p>
+                <p class="r">Nationality: <b>[[nationality]]</b></p>
+                <p class="r">📱: <b>[[mobile]]</b></p>
+                <p class="r">[[mail]]</p>
             </div>
 
             <div id="about-me">
                 <p class="left-title">About me</p>
-                <p>I have a diverse background spanning journalism, sports leadership, and technical
-                    support. As an interviewer and layout designer I excelled in teamwork, orchestrating interviews with
-                    notable figures and contributing to the newspaper’s success.
-                    <br><br>
-                    In my professional roles, I’ve demonstrated strong communication skills, from public briefings to
-                    technical support interactions with Google’s customers. My experience includes spearheading the
-                    establishment of a GCP support site and conducting technical interviews. Beyond my professional
-                    pursuits, I am a proficient Linux user with a passion for exploring different distributions,
-                    complemented by a solid understanding of Windows systems.
-                </p>
+                <p class="r">[[about_me]]</p>
             </div>
 
             <div id="areas-of-specialization">
                 <p class="left-title">Areas of specialization</p>
                 <ul>
-                    <li>GCP</li>
-                    <li>.NET</li>
-                    <li>Cloud computing</li>
-                    <li>Android</li>
-                    <li>Databases</li>
-                    <li>Big Data</li>
-                    <li>Data analytics</li>
-                    <li>ETL</li>
-                    <li>Web development</li>
-                    <li>WPF</li>
-                    <li>MVVM</li>
-                    <li>MVP</li>
+                    <li class="t">{{areas_of_specialization}}[[name]]</li>
                 </ul>
             </div>
 
             <div id="interests">
                 <p class="left-title">Interests</p>
                 <ul>
-                    <li>Programming</li>
-                    <li>Handball</li>
-                    <li>Art</li>
-                    <li>Cooking</li>
-                    <li>Motor racing</li>
-                    <li>Traveling</li>
-                    <li>Arch</li>
-                    <li>LaTeX</li>
+                    <li class="t">{{interests}}[[name]]</li>
                 </ul>
             </div>
 
@@ -78,142 +53,52 @@
             <div id="curriculum">
                 <p class="title">Curriculum</p>
                 <div id="curriculum-jobs">
-                    <div class="curriculum-job">
-                        <div class="curriculum-job-date">Sep ’21- Current</div>
+
+                    <div class="t curriculum-job">{{jobs}}
+                        <div class="curriculum-job-date">[[start_date]] - [[end_date]]</div>
                         <div class="curriculum-job-description">
-                            <p class="curriculum-table-position">Google Cloud Data Engineer (Team leader)</p>
+                            <p class="curriculum-table-position">[[position]]</p>
                             <div class="curriculum-table-company-specs">
                                 <p class="curriculum-table-location"><a class="curriculum-table-company"
-                                        href="https://webhelp.com/">Webhelp</a> · Barcelona</p>
+                                        href="[[company_url]]">[[company]]</a> · [[location]]</p>
                             </div>
-                            <p class="curriculum-table-description">Provide technical advice for important companies
-                                implementing systems on the Google Cloud Platform. The role includes troubleshooting,
-                                offering architectural and implementation solutions, and collaborating with the product
-                                team to improve the products.</p>
+                            <p class="curriculum-table-description">[[description]]</p>
                         </div>
                     </div>
 
-                    <div class="curriculum-job">
-                        <div class="curriculum-job-date">Feb ’21– Sep ’21</div>
-                        <div class="curriculum-job-description">
-                            <p class="curriculum-table-position">Big Data Analyst</p>
-                            <div class="curriculum-table-company-specs">
-                                <p class="curriculum-table-location"><a class="curriculum-table-company"
-                                        href="https://accenture.com/">Accenture</a> · Alicante</p>
-                            </div>
-                            <p class="curriculum-table-description">Our team had to analyse the sales and the defaulters
-                                for Endesa, leaving us to an extensive analysis of all their data and to optimize as
-                                much as we were able to.</p>
-                        </div>
-                    </div>
-
-                    <div class="curriculum-job">
-                        <div class="curriculum-job-date">Oct ’20– Feb ’21</div>
-                        <div class="curriculum-job-description">
-                            <p class="curriculum-table-position">Full-stack Engineer</p>
-                            <div class="curriculum-table-company-specs">
-                                <p class="curriculum-table-location"><a class="curriculum-table-company"
-                                        href="https://everis.com/">Everis</a> · Alicante</p>
-                            </div>
-                            <p class="curriculum-table-description">I was on charge of keeping up to date the backend
-                                service for Naturgy and also the application used by the technicians (android + web).
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="curriculum-job">
-                        <div class="curriculum-job-date">Apr ’20– Oct ’21</div>
-                        <div class="curriculum-job-description">
-                            <p class="curriculum-table-position">Android Engineer</p>
-                            <div class="curriculum-table-company-specs">
-                                <p class="curriculum-table-location">Barcelona</p>
-                            </div>
-                            <p class="curriculum-table-description">Developing an Android application during Covid to
-                                keep myself up to date while on home.</p>
-                        </div>
-                    </div>
-
-                    <div class="curriculum-job">
-                        <div class="curriculum-job-date">Mar ’20– Mar ’20</div>
-                        <div class="curriculum-job-description">
-                            <p class="curriculum-table-position">Software Engineer</p>
-                            <div class="curriculum-table-company-specs">
-                                <p class="curriculum-table-location"><a class="curriculum-table-company"
-                                        href="https://altia.com/">Altia</a> · Alicante</p>
-                            </div>
-                            <p class="curriculum-table-description">In Altia I worked in a .NET REST API for the
-                                European Union Space Programme’s Copernicus.
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </div>
 
             <div id="all-skills-container">
 
                 <div id="skills-container-left">
+
                     <div id="degrees">
                         <p class="title">Degrees</p>
                         <div class="degrees-list">
-                            <div class="degree">
-                                <p class="degree-name">Multiplatform Application Development</p>
-                                <p class="degree-location">Alicante</p>
-                            </div>
-                            <div class="degree">
-                                <p class="degree-name">Scientific Baccalaureate</p>
-                                <p class="degree-location">Alicante</p>
+                            <div class="t degree">{{degrees}}
+                                <p class="degree-name">[[name]]</p>
+                                <p class="degree-location">[[location]]</p>
                             </div>
                         </div>
                     </div>
+
                     <div id="certificates-grants">
                         <p class="title">Certificates & grants</p>
                         <div id="certificates-grants-list">
-                            <p><b>2021</b> Associate Cloud Engineer (GCP)</p>
+                            <p class="t">{{certificates_grants}}<b>[[completion_date]]</b> [[name]]</p>
                         </div>
                     </div>
                     <div id="languages">
                         <p class="title">Languages</p>
                         <div id="languages-list">
-                            <div class="language">
-                                <p class="language-name">Spanish</p>
+                            <div class="t language">{{languages}}
+                                <p class="language-name">[[language]]</p>
                                 <div class="language-skill">
-                                    <p class="cambridge-level">Native</p>
+                                    <p class="cambridge-level">[[cambridge_level]]</p>
                                     <div class="language-level-container">
-                                        <p class="language-level">mother tongue</p>
-                                        <p class="language-level"></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="language">
-                                <p class="language-name">English</p>
-                                <div class="language-skill">
-                                    <p class="cambridge-level">C2</p>
-                                    <div class="language-level-container">
-                                        <p class="language-level language-level-5">● ● ● ● ●</p>
-                                        <p class="language-level"></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="language">
-                                <p class="language-name">Valencian/Catalan</p>
-                                <div class="language-skill">
-                                    <p class="cambridge-level">C2</p>
-                                    <div class="language-level-container">
-                                        <p class="language-level language-level-5">● ● ● ● ●</p>
-                                        <p class="language-level"></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="language">
-                                <p class="language-name">French</p>
-                                <div class="language-skill">
-                                    <p class="cambridge-level">C2</p>
-                                    <div class="language-level-container">
-                                        <p class="language-level language-level-2">● ●</p>
-                                        <p class="language-level">&nbsp;● ● ●</p>
+                                        <p class="language-level language-level-[[language_level]]">[[positive_points]]</p>
+                                        <p class="language-level">&nbsp;[[negative_points]]</p>
                                     </div>
                                 </div>
                             </div>
