@@ -47,7 +47,7 @@ p#header-name {
     margin-right: 2em;
 }
 
-#skills-container {
+#all-skills-container {
     display: flex;
     flex-direction: row;
 }
@@ -115,7 +115,7 @@ p#header-name {
     font-size: large;
 }
 
-#degrees {
+#degrees {  
     background-color: #7DD688;
 }
 
@@ -126,7 +126,7 @@ p#header-name {
 #programming-container,
 #skills-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .programming-language,
@@ -152,7 +152,7 @@ p#header-name {
 .skill-knowledge {
     background-color: green;
     width: 100%;
-    height: 30%;
+    height: 1em;
     align-self: center;
     margin-left: 1em;
     margin-right: 1em;
