@@ -89,6 +89,7 @@
                             <p class="t">{{certificates_grants}}<b>[[completion_date]]</b> [[name]]</p>
                         </div>
                     </div>
+
                     <div id="languages">
                         <p class="title">Languages</p>
                         <div id="languages-list">
@@ -97,28 +98,19 @@
                                 <div class="language-skill">
                                     <p class="cambridge-level">[[cambridge_level]]</p>
                                     <div class="language-level-container">
-                                        <p class="language-level language-level-[[language_level]]">[[positive_points]]</p>
+                                        <p class="language-level language-level-[[language_level]]">[[positive_points]]
+                                        </p>
                                         <p class="language-level">&nbsp;[[negative_points]]</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div id="soft-skills">
                         <p class="title">Soft Skills</p>
                         <ul>
-                            <li>Communication</li>
-                            <li>Leadership</li>
-                            <li>Collaboration</li>
-                            <li>Teamwork</li>
-                            <li>Problem-Solving</li>
-                            <li>Decision Making</li>
-                            <li>Effective Presentation </li>
-                            <li>Public Speaking</li>
-                            <li>Organization</li>
-                            <li>Punctuality</li>
-                            <li>Adaptability</li>
-                            <li>Relationship Building</li>
+                            <li class="t">{{soft_skills}}[[name]]</li>
                         </ul>
 
                     </div>
@@ -129,90 +121,29 @@
                     <div id="programming">
                         <p class="title">Programming</p>
                         <div id="programming-container">
-                            <div class="programming-language">
-                                <p class="programming-language-name">C#</p>
-                                <div class="programming-language-knowledge"></div>
+
+                            <div class="t programming-language">{{programming}}
+                                <div class="programming-language-name-container">
+                                    <p class="programming-language-name">[[name]]</p>
+                                </div>
+                                <div class="programming-language-knowledge programming-language-knowledge-[[skill]]">
+
+                                </div>
                             </div>
-                            <div class="programming-language">
-                                <p class="programming-language-name">Java</p>
-                                <div class="programming-language-knowledge"></div>
-                            </div>
-                            <div class="programming-language">
-                                <p class="programming-language-name">SQL</p>
-                                <div class="programming-language-knowledge"></div>
-                            </div>
-                            <div class="programming-language">
-                                <p class="programming-language-name">Javascript</p>
-                                <div class="programming-language-knowledge"></div>
-                            </div>
-                            <div class="programming-language">
-                                <p class="programming-language-name">Python</p>
-                                <div class="programming-language-knowledge"></div>
-                            </div>
-                            <div class="programming-language">
-                                <p class="programming-language-name">C</p>
-                                <div class="programming-language-knowledge"></div>
-                            </div>
-                            <div class="programming-language">
-                                <p class="programming-language-name">C++</p>
-                                <div class="programming-language-knowledge"></div>
-                            </div>
-                            <div class="programming-language">
-                                <p class="programming-language-name">PHP</p>
-                                <div class="programming-language-knowledge"></div>
-                            </div>
+
                         </div>
                     </div>
                     <div id="skills">
                         <p class="title">Skills</p>
                         <div id="skills-container">
-                            <div class="skill">
-                                <p class="skill-name">Linux</p>
-                                <div class="skill-knowledge"></div>
-                            </div>
-                            <div class="skill">
-                                <p class="skill-name">GCP</p>
-                                <div class="skill-knowledge"></div>
-                            </div>
-                            <div class="skill">
-                                <p class="skill-name">MySLQ</p>
-                                <div class="skill-knowledge"></div>
-                            </div>
-                            <div class="skill">
-                                <p class="skill-name">BigQuery</p>
-                                <div class="skill-knowledge"></div>
-                            </div>
-                            <div class="skill">
-                                <p class="skill-name">PostgresSQL</p>
-                                <div class="skill-knowledge"></div>
-                            </div>
-                            <div class="skill">
-                                <p class="skill-name">React</p>
-                                <div class="skill-knowledge"></div>
-                            </div>
-                            <div class="skill">
-                                <p class="skill-name">Docker</p>
-                                <div class="skill-knowledge"></div>
-                            </div>
-                            <div class="skill">
-                                <p class="skill-name">MongoDB</p>
-                                <div class="skill-knowledge"></div>
-                            </div>
-                            <div class="skill">
-                                <p class="skill-name">Firebase</p>
-                                <div class="skill-knowledge"></div>
-                            </div>
-                            <div class="skill">
-                                <p class="skill-name">Networking</p>
-                                <div class="skill-knowledge"></div>
-                            </div>
-                            <div class="skill">
-                                <p class="skill-name">AWS</p>
-                                <div class="skill-knowledge"></div>
-                            </div>
-                            <div class="skill">
-                                <p class="skill-name">Azure</p>
-                                <div class="skill-knowledge"></div>
+
+                            <div class="t skill">{{skills}}
+                                <div class="skill-name-container">
+                                    <p class="skill-name">[[name]]</p>
+                                </div>
+                                <div class="skill-knowledge skill-knowledge-[[skill]]">
+
+                                </div>
                             </div>
                         </div>
                     </div>

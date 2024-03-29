@@ -182,5 +182,160 @@
             "negative_points": "● ● ●",
             "language_level": "2"
         }
+    ],
+    "soft_skills": [
+        {
+            "name": "Communication",
+            "comment": ""
+        },
+        {
+            "name": "Leadership",
+            "comment": ""
+        },
+        {
+            "name": "Collaboration",
+            "comment": ""
+        },
+        {
+            "name": "Teamwork",
+            "comment": ""
+        },
+        {
+            "name": "Problem-Solving",
+            "comment": ""
+        },
+        {
+            "name": "Decision Making",
+            "comment": ""
+        },
+        {
+            "name": "Effective Presentation",
+            "comment": ""
+        },
+        {
+            "name": "Public Speaking",
+            "comment": ""
+        },
+        {
+            "name": "Organization",
+            "comment": ""
+        },
+        {
+            "name": "Punctuality",
+            "comment": ""
+        },
+        {
+            "name": "Adaptability",
+            "comment": ""
+        },
+        {
+            "name": "Relationship Building",
+            "comment": ""
+        }
+        
+    ],
+    "programming": [
+        {
+            "name": "C#",
+            "skill": "10",
+            "comment": "This is a test"
+        },
+        {
+            "name": "Java",
+            "skill": "10",
+            "comment": "This is a test"
+        },
+        {
+            "name": "SQL",
+            "skill": "10",
+            "comment": "This is a test"
+        },
+        {
+            "name": "Javascript",
+            "skill": "10",
+            "comment": "This is a test"
+        },
+        {
+            "name": "Python",
+            "skill": "8",
+            "comment": "This is a test"
+        },
+        {
+            "name": "C",
+            "skill": "6",
+            "comment": "This is a test"
+        },
+        {
+            "name": "C++",
+            "skill": "6",
+            "comment": "This is a test"
+        },
+        {
+            "name": "PHP",
+            "skill": "5",
+            "comment": "This is a test"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Linux",
+            "skill": "10",
+            "comment": "This is a test"
+        },
+        {
+            "name": "GCP",
+            "skill": "10",
+            "comment": "This is a test"
+        },
+        {
+            "name": "MySQL",
+            "skill": "10",
+            "comment": "This is a test"
+        },
+        {
+            "name": "BigQuery",
+            "skill": "10",
+            "comment": "This is a test"
+        },
+        {
+            "name": "PostgresSQL",
+            "skill": "8",
+            "comment": "This is a test"
+        },
+        {
+            "name": "React",
+            "skill": "6",
+            "comment": "This is a test"
+        },
+        {
+            "name": "Docker",
+            "skill": "6",
+            "comment": "This is a test"
+        },
+        {
+            "name": "MongoDB",
+            "skill": "5",
+            "comment": "This is a test"
+        },
+        {
+            "name": "Firebase",
+            "skill": "8",
+            "comment": "This is a test"
+        },
+        {
+            "name": "Networking",
+            "skill": "6",
+            "comment": "This is a test"
+        },
+        {
+            "name": "AWS",
+            "skill": "2",
+            "comment": "This is a test"
+        },
+        {
+            "name": "Azure",
+            "skill": "3",
+            "comment": "This is a test"
+        }
     ]
 }
