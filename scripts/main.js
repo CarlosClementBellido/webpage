@@ -8,6 +8,10 @@ window.onload = () => {
     startIgAnimation();
     createListFunctionalities();
     checkResponsive();
+
+    document.getElementById("picture").addEventListener("click", async () => {
+        compileTeX();
+    });
 };
 
 //#region Ig animation
@@ -135,3 +139,11 @@ function checkResponsive() {
 }
 
 //#endregion Check screen size
+
+
+async function compileTeX() {
+    (await fetch("http://0.0.0.0:8001/latex/main.tex")).text().then(response => {
+        const tex = response;
+        console.log(tex);
+    });
+}
