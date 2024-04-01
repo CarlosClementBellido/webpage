@@ -73,6 +73,10 @@ p#header-name {
     margin-left: 12%;
 }
 
+#about-me {
+    text-align: justify;
+}
+
 #curriculum>.title {
     height: 5%;
     margin: 0px;
@@ -314,6 +318,7 @@ p#header-name {
 
 .comment-hover {
     cursor: pointer;
+    font-weight: bold;
 }
 
 .comment-hover:hover>.comment {
@@ -340,6 +345,7 @@ li.comment-hover {
 .comment>div {
     padding-top: .5em;
     text-align: justify;
+    font-weight: initial;
 }
 
 .close-comment {
