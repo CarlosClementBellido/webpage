@@ -49,9 +49,21 @@ p#header-name {
     margin-right: 2em;
 }
 
+#main-cv-container.mobile {
+    margin-right: 0em;
+}
+
+#cv-container.mobile {
+    flex-direction: column;
+}
+
 #all-skills-container {
     display: flex;
     flex-direction: row;
+}
+
+#all-skills-container.mobile {
+    flex-direction: column;
 }
 
 #skills-container-left,
@@ -59,6 +71,11 @@ p#header-name {
     display: flex;
     flex-direction: column;
     width: 50%;
+}
+
+#skills-container-left.mobile,
+#skills-container-right.mobile {
+    width: 100%;
 }
 
 #personal-info {
@@ -69,12 +86,24 @@ p#header-name {
     padding-right: 2em;
 }
 
+#personal-info.mobile {
+    width: 100%;
+    padding-left: 0em;
+    margin-right: 0em;
+    padding-right: 0em;
+}
+
 #personal-info>div {
     margin-left: 12%;
 }
 
-#about-me {
+#about-me>.about-me {
     text-align: justify;
+}
+
+#about-me.mobile>.about-me {
+    text-align: left;
+    margin-right: 2em;
 }
 
 #curriculum>.title {
@@ -104,6 +133,7 @@ p#header-name {
     border-left: 1px solid;
     padding-left: 1em;
     width: 100%;
+    padding-right: 1em;
 }
 
 .curriculum-table-position,
@@ -298,6 +328,34 @@ p#header-name {
 
 .column-list-3 {
     column-count: 3;
+}
+
+#areas-of-specialization.mobile>.column-list-2,
+#areas-of-specialization.mobile>.column-list-1,
+#areas-of-specialization.mobile>.column-list-3,
+#interests.mobile>.column-list-2,
+#interests.mobile>.column-list-1,
+#interests.mobile>.column-list-3,
+#soft-skills.mobile>.column-list-1,
+#soft-skills.mobile>.column-list-2,
+#soft-skills.mobile>.column-list-3 {
+    column-count: 1;
+}
+
+#languages-list.mobile>.language {
+    justify-content: space-between;
+}
+
+#languages-list.mobile>.language>.language-name {
+    margin-left: 1em;
+}
+
+#languages-list>.language>.language-skill>.cambridge-level {
+    margin-right: 1em;
+}
+
+#curriculum-jobs.mobile>.curriculum-job>.curriculum-job-date {
+    width: 50%;
 }
 
 .comment {

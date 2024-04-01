@@ -7,6 +7,7 @@ window.onload = () => {
     createTemplates();
     startIgAnimation();
     createListFunctionalities();
+    checkResponsive();
 };
 
 //#region Ig animation
@@ -86,7 +87,7 @@ function createListFunctionalities() {
 
         closeButton.addEventListener("click", () => {
             comment.classList.remove("active");
-            closeButton.classList.remove("active");            
+            closeButton.classList.remove("active");
         });
 
         commentHover.addEventListener("click", (event) => {
@@ -106,3 +107,28 @@ function createListFunctionalities() {
 }
 
 //#endregion List functionalities creation
+
+//#region Check screen size
+
+window.addEventListener('resize', checkResponsive);
+
+const responsiveElementIDsMobile = ["personal-info", "cv-container", "skills-container-left", "skills-container-right", "all-skills-container", "areas-of-specialization", "interests", "main-cv-container", "soft-skills", "languages-list", "curriculum-jobs", "about-me"];
+const responsiveElementIDsSmall = ["skills-container-left", "skills-container-right", "all-skills-container", "areas-of-specialization", "interests", "about-me"];
+
+function checkResponsive() {
+    console.log(window.innerWidth);
+    if (window.innerWidth < 1000) {
+        responsiveElementIDsSmall.forEach(elemID => document.getElementById(elemID).classList.remove("mobile"));
+        responsiveElementIDsMobile.forEach(elemID => document.getElementById(elemID).classList.add("mobile"));
+    }
+    else if (window.innerWidth < 1700) {
+        responsiveElementIDsMobile.forEach(elemID => document.getElementById(elemID).classList.remove("mobile"));
+        responsiveElementIDsSmall.forEach(elemID => document.getElementById(elemID).classList.add("mobile"));
+    }
+    else {
+        responsiveElementIDsMobile.forEach(elemID => document.getElementById(elemID).classList.remove("mobile"));
+        responsiveElementIDsSmall.forEach(elemID => document.getElementById(elemID).classList.remove("mobile"));
+    }
+}
+
+//#endregion Check screen size
