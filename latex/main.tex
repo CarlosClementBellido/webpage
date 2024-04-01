@@ -1,214 +1,251 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
 
-\usepackage[T1]{fontenc}
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+\usepackage[subtle]{savetrees}
 
-\usepackage{fontawesome}
-\usepackage[hidelinks,
-    colorlinks,
-    filecolor={blue},
-    urlcolor={blue}]{hyperref}
-\setlength{\parindent}{0cm}
-\usepackage{paracol}
-\usepackage{ifthen}
+%------------------------------------------------------------------ Variablen
 
-\usepackage{tikz}
-\usepackage{tikz-3dplot}
-\usepackage{smartdiagram}
-\usepackage{float}
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
 
-\usepackage{array}
-%\setlength\extrarowheight{1.5em} % adds some spacing between the lines of the CV's tabulars
-% not used here as not to interfer with other tables
-\usetikzlibrary{decorations.text}
-\usetikzlibrary{fadings}
-\usetikzlibrary{calc}
+%------------------------------------------------------------------
+\title{New Simple CV}
+\author{\LaTeX{} Ninja}
+\date{June 2019}
 
-\usetikzlibrary{shapes.misc,positioning}
-\usetikzlibrary{arrows}
-\usetikzlibrary{arrows.meta}
-\usetikzlibrary{backgrounds} 
-\usetikzlibrary{shadings}
-\usetikzlibrary{calendar} 
-\usetikzlibrary{er}
-\usetikzlibrary{patterns} % horizontal lines, vertical lines, north east lines, north west lines, grid, crosshatch, dots, crosshatch dots, fivepointed stars, sixpointed stars, bricks
-\usetikzlibrary{shapes} 
-\usetikzlibrary{shapes.geometric}
-\usetikzlibrary{decorations}
-\usetikzlibrary{topaths}
-
-\usepackage{graphicx}
-%\usepackage[usenames, dvipsnames]{color} 
-% https://de.sharelatex.com/learn/Using_colours_in_LaTeX#!#Reference_guide z.B. \color{RubineRed}
-%\usepackage{xcolor}
+\pagestyle{empty}
+\begin{document}
 
 
-% avoid line overflow
-\setlength{\emergencystretch}{2pt}
-%---------------------------------------------------------------------------------
+\thispagestyle{empty}
+%-------------------------------------------------------------
 
-\usepackage{titlesec} % Allows creating custom \sections
+\section*{Start}
 
-% Format of the section titles
-\titleformat{\section}{
-\scshape\Large\raggedright}{}{0em}{}[\titlerule] % smallcaps, Large, continuous line - looks better if two columns, might look a bit too dramatic if just one ;) 
-\titlespacing{\section}{0pt}{12pt}{5pt} % Spacing around titles {<left spacing>}{<before spacing>}{<after spacing>}
-%----------------------------------------------------
+\simpleheader{headercolour}{Carlos}{Clement Bellido}{Cirriculum Vitae - \today}{white}
 
- \newcommand{\cvkeyword}[3]{
- \colorbox{#2}{\textcolor{#3}{#1}} \phantom{}%
- }
- 
-%------------------------
-\newcommand{\cvtag}[1]{% from alta-cv: https://www.overleaf.com/latex/templates/altacv-template/trgqjpwnmtgv
-  \tikz[baseline]\node[draw=black!40,rounded corners,inner sep=0.4em]{\color{black!50}#1};
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{2em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1}  \backgroundcolor{l}[rgb]{0,0,0.7} % dark materialgreen for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \roundpic{picture.jpg}
+\end{center}
+
+\begin{flushleft}
+\bg{materialgreen}{white}{Personal} \\[0.5em]
+
+
+
+\texttt{Carlos Clement Bellido} \\
+\vspace{0.4em}
+\texttt{Nationality: Spanish}\\
+\vspace{0.25em}
+\Mobilefone {\texttt{\hspace{1em} \href{tel:+34622437963}{+34 622 43 79 63}}}\\
+\vspace{0.25em}
+\href{mailto:carlos.clement.bellido@gmail.com}{\scriptsize \texttt{carlos.clement.bellido@gmail.com}}
+
+\bigskip
+
+\bg{materialgreen}{white}{About me} \\ [0.5em]
+I have a diverse background spanning journalism, sports leadership, and technical support. As an interviewer and layout designer I excelled in teamwork, orchestrating interviews with notable figures and contributing to the newspaper's success.\\
+\vspace{0.5em}
+In my professional roles, I've demonstrated strong communication skills, from public briefings to technical support interactions with Google's customers. My experience includes spearheading the establishment of a GCP support site and conducting technical interviews. Beyond my professional pursuits, I am a proficient Linux user with a passion for exploring different distributions, complemented by a solid understanding of Windows systems.
+\bigskip
+
+
+
+\bg{materialgreen}{white}{Areas of specialization} \\[0.5em]
+
+\begin{tabular}{ll}
+  \textbullet~ \texttt{GCP} & \textbullet~ \texttt{.NET} \\
+  \textbullet~ \texttt{Cloud computing} & \textbullet~ \texttt{Android} \\
+  \textbullet~ \texttt{Databases} & \textbullet~ \texttt{Big Data} \\
+  \textbullet~ \texttt{Data analytics} & \textbullet~ \texttt{ETL} \\
+  \textbullet~ \texttt{Web development} & \textbullet~ \texttt{WPF} \\
+  \textbullet~ \texttt{MVVM} & \textbullet~ \texttt{MVP} \\
+\end{tabular}
+
+\bigskip
+
+\bg{materialgreen}{white}{Interests}\\[0.5em]
+
+\begin{tabular}{ll}
+    \textbullet~ \texttt{Programming} & \textbullet~ \texttt{Handball} \\
+    \textbullet~ \texttt{Art} & \textbullet~ \texttt{Cooking} \\
+    \textbullet~ \texttt{Motor racing} & \textbullet~ \texttt{Traveling} \\
+    \textbullet~ \LaTeX & \textbullet~ \texttt{Arch} \\
+\end{tabular}
+
+\vspace{1.4cm}
+
+\infobubble{\faLinkedin}{materialgreen}{white}{\href{https://www.linkedin.com/in/carlos-clement-bellido-917961186/}{LinkedIn}}
+\infobubble{\faGithub}{materialgreen}{white}{\href{https://github.com/CarlosClementBellido}{GitHub}}
+\infobubble{\faAt}{materialgreen}{white}{\href{mailto:carlos.clement.bellido@gmail.com}{Email}}
+
+
+
+\end{flushleft}
+
+
+
+\phantom{turn the page}
+
+\phantom{turn the page}
 }
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Curriculum}
+
+\begin{tabular}{r|p{0.5\textwidth}c}
+    
+    \cvevent{Sep '21- Current}{Google Cloud Data Engineer (Team leader)}{\href{https://webhelp.com/}{{\footnotesize\underline{(Webhelp)}}} \hspace{0.05cm}}{Barcelona \color{cvred}}{Provide technical advice for important companies implementing systems on the Google Cloud Platform. The role includes troubleshooting, offering architectural and implementation solutions, and collaborating with the product team to improve the products}{} \\
+
+    \cvevent{Feb '21-- Sep '21}{Big Data Analyst}{\href{https://www.accenture.com/}{{\footnotesize\underline{(Accenture)}}} \hspace{0.05cm }}{Alicante \color{cvred}}{Our team had to analyse the sales and the defaulters for Endesa, leaving us to an extensive analysis of all their data and to optimize as much as we were able to.}{} \\
+
+    \cvevent{Oct '20-- Feb '21}{Full-stack Engineer}{\href{https://www.everis.com/}{{\footnotesize\underline{(Everis)}}} \hspace{0.05cm }}{Alicante \color{cvred}}{I was on charge of keeping up to date the backend service for Naturgy and also the application used by the technicians (android + web).}{} \\
+
+    \cvevent{Apr '20-- Oct '21}{Android Engineer}{ \hspace{0.05cm }}{Alicante \color{cvred}}{Developing an Android application during Covid to keep myself up to date while on home.}{} \\
+
+    \cvevent{Mar '20-- Mar '20}{Software Engineer}{\href{https://www.altia.com/}{{\footnotesize\underline{(Altia)}}} \hspace{0.05cm }}{Alicante \color{cvred}}{In Altia I worked in a .NET REST API for the European Union Space Programme’s Copernicus.}{}
+\end{tabular}
 
 
-%------------------- ICON Cross
+\begin{minipage}[t]{0.35\textwidth}
+\section*{Degrees}
+\begin{tabular}{r p{0.6\textwidth} c}
+    
+    \cvdegree{}{Multiplatform Application Development}{}
+    {Alicante \color{headermaterialgreen}}{\href{https://portal.edu.gva.es/iesdoctorbalmis/va/pagina-principal/}{{\underline{(Website)}}}}{} \\
+    
+    \cvdegree{}{Scientific Baccalaureate}{}{Alicante\color{headermaterialgreen}}{\href{https://portal.edu.gva.es/iesfigueraspacheco/}{{\underline{(Website)}}}}{}
 
-\newcommand{\iconcross}[7]{%
-\begin{tikzpicture}%
-\draw[ultra thick,draw=#2] (-2,-2) -- (2,2);%
-\draw[ultra thick, draw=#2] (-2,2) -- (2,-2);%
-\node[above=0.5em,text=#3] at (0,1) {#1 #4};%
-\node[below=0.5em,text=#3] at (0,-1) {#1 #5};%
-\node[right=0.5em,text=#3] at (1,0) {#1 #6};%
-\node[left=0.5em,text=#3] at (-1,0) {#1 #7};%
-\end{tikzpicture}%
-}
- 
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
 
-\usepackage{smartdiagram}
-%-----------------------------------------------------
-% set smartdiagram colours, from: https://github.com/Johayon/Data-Scientist-Resume-LaTeX/blob/master/twentysecondcv.cls
+\section*{Programming}
+\begin{tabular}{r @{\hspace{0.5em}}l}
 
+    \bg{skilllabelcolour}{iconcolour}{C\#} & \barrule{0.55}{0.35em}{materialteal}\\
+    \bg{skilllabelcolour}{iconcolour}{Java} & \barrule{0.55}{0.35em}{materialteal}\\
+    \bg{skilllabelcolour}{iconcolour}{SQL} & \barrule{0.55}{0.35em}{materialteal}\\
+    \bg{skilllabelcolour}{iconcolour}{Javascript} &  \barrule{0.55}{0.35em}{materialteal}\\
+    \bg{skilllabelcolour}{iconcolour}{Python} & \barrule{0.44}{0.35em}{materiallime} \\
+    \bg{skilllabelcolour}{iconcolour}{C/C++} & \barrule{0.40}{0.35em}{materialamber} \\
+    \bg{skilllabelcolour}{iconcolour}{PHP} & \barrule{0.40}{0.35em}{materialamber} \\
 
-%-------------------------------------------------------
-\smartdiagramset{
-    bubble center node font = \footnotesize,
-    bubble node font = \footnotesize,
-    % specifies the minimum size of the bubble center node
-    bubble center node size = 0.5cm,
-    %  specifies the minimum size of the bubbles
-    bubble node size = 0.5cm,
-    % specifies which is the distance among the bubble center node and the other bubbles
-    distance center/other bubbles = 0.3cm,
-    % sets the distance from the text to the border of the bubble center node
-    distance text center bubble = 0.5cm,
-    % set center bubble color
-    bubble center node color = pblue,
-    % define the list of colors usable in the diagram
-    set color list = {materialcyan, orange, green, materialorange, materialteal, materialamber, materialindigo, materialgreen, materiallime},
-    % sets the opacity at which the bubbles are shown
-    bubble fill opacity = 0.6,
-    % sets the opacity at which the bubble text is shown
-    bubble text opacity = 1,
-    description title text width=0.5cm,
-    description title width=0.5cm,
-    description width=5cm,
-    description text width=5cm,
-    descriptive items y sep =1.25,
-    back arrow distance = 0,
-    back arrow disabled = true,
-    border color = white
-}
-%-------------------------------
-\newcommand{\lorem}{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.} % Dummy text
-
-%--------------------------------------------------- pictures
-\newcommand{\roundpic}[1]{\begin{figure}[H]\tikz  \draw [path picture={ \node at (path picture bounding box.center){\includegraphics[height=3.4cm]{#1}} ;}] (0,2) circle (1.7) ;\end{figure}}
-
-\newcommand{\squarepic}[1]{\begin{figure}[H]\tikz  \draw [path picture={ \node at (path picture bounding box.center){\includegraphics[height=4cm]{#1}} ;}] (0,0) - - (-2,2) - - (0,4) - - (2,2) - - cycle ;\end{figure}}
+        
+\end{tabular}
+\end{minipage}
 
 
-%------------------------------------ pictoFraction
-\newcommand{\icon}[3]{\phantom{x}{#3\color{#2}#1}\phantom{x}}
-%------------------- pictogram Fraction: pictoFraction
-\newcommand{\pictofraction}[6]{%
-\pgfmathparse{#3 - 1}\foreach \n in {0,...,\pgfmathresult}{\icon{#1}{#2}{#6}}%
-\pgfmathparse{#5 - 1}\foreach \n in {0,...,\pgfmathresult}{\icon{#1}{#4}{#6}}%
-}
+\begin{minipage}[t]{0.3\textwidth}
+  \section*{Certificates \& Grants}
+  \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.75\textwidth}} % Adjusted the width to 0.7\textwidth
+    2021 & Associate Cloud Engineer (GCP)  \\
+  \end{tabular}
+\bigskip
 
+\section*{Languages}
+\begin{tabular}{l | ll}
+\textbf{Spanish} & Native & {\phantom{x}\footnotesize mother tongue}\\
 
+\textbf{English} & C2 & \pictofraction{\faCircle}{materialgreen}{4}{materialgreen}{1}{\tiny}\\
 
-%----------------------------------------------------- font highlighting / boxes with background color 
-\newcommand{\bg}[3]{\colorbox{#1}{\bfseries\color{#2}#3}}
-\newcommand{\bgupper}[3]{\colorbox{#1}{\color{#2}\huge\bfseries\MakeUppercase{#3}}}
+\textbf{Valencian/Catalan} & C2 & \pictofraction{\faCircle}{materialgreen}{4}{materialgreen}{1}{\tiny}\\
 
-%------------------------- Bubble Diagram
-\newcommand{\bubblediagram}[1]{\smartdiagram[bubble diagram]{#1}}
-
-
-\newcommand{\skillbubble}[2]{%
-\begin{tikzpicture}%
-\draw[draw=none,fill=#1] (0,0) circle (0.#2);%
-\end{tikzpicture}%
-}
-
-\newcommand{\hobbyicon}[5]{%
-\begin{tikzpicture}%
-\draw[draw=none,fill=#3] (0,0) circle (0.5);%
-\node[](icon) at (0,0) {#4#1};%
-\node[below=#5,align=center] at (icon) {#2};%
-\end{tikzpicture}
-}
-
-\renewcommand*{\emailsymbol}{{\small\faEnvelopeO}~}  
-
-
-%-------------------------------------------- rules / separators
-
-\newcommand{\dashrule}[2]{\begin{figure}[H]\begin{minipage}[t]{#1\textwidth}\tikz \draw[loosely dashed,#2] (0pt,0pt) -- (\textwidth,0pt);\end{minipage}\end{figure}}
-
-\newcommand{\dotrule}[2]{\begin{figure}[H]\begin{minipage}[t]{#1\textwidth}\tikz \draw[loosely dotted, ultra thick,#2] (0,0) -- (\textwidth,0);\end{minipage}\end{figure}}
-
-
-%-------------------------------------------------------
+\textbf{French} & A2 & \pictofraction{\faCircle}{materialgreen}{2}{black!30}{3}{\tiny}\\
+\end{tabular}
+\bigskip
 
 
 
-
-\newcommand{\event}[5]{%
-{%
-\draw[draw=black, line width=0.2em,anchor=west] (0,#1) -- (#5,#1);%
-\node[fill=#2,right,inner sep=0.5em] 	at (#5,#1) {\textbf{#3}~~#4 };%
-} % startpunkt #1. Farbe #2, Detaildatum #3, Beschreibung #4, Entfernung von Timeline #5
-}
-
-%---------------------------------------------------------
-\newcommand{\barrule}[3]{\hspace{0.5em}
-{\color{#3}\rule[\baselineskip]{#1\textwidth}{#2}}\vspace{0.5em}
-}
-
-\newcommand{\cvevent}[6]{{#1}&\textbf{#2}\newline\textsc{#3} $\cdot$ {#4 ~\faMapMarker}\newline{\color{black!70}\footnotesize #5}\vspace{1.5em} & \raisebox{-0.7\height}{\includegraphics[height=1cm]{#6}}}
-
-\newcommand{\cvdegree}[6]{{#1} & \textbf{#2}\newline\textsc{#3} $\cdot$ {#4 {\phantom{i}\footnotesize ~\faUniversity}}\newline{\color{black!70}\scriptsize #5}\vspace{1.5em} & \raisebox{-0.7\height}{\includegraphics[height=1cm]{#6}}}
+\section*{Soft skills}
+\begin{tabular}{ll}
+  \textbullet~ \texttt{Communication} & \textbullet~ \texttt{Leadership} \\
+  \textbullet~ \texttt{Collaboration} & \textbullet~ \texttt{Teamwork} \\
+  \textbullet~ \texttt{Problem-Solving} & \textbullet~ \texttt{Decision Making} \\
+  \textbullet~ \texttt{Effective Presentation} & \textbullet~ \texttt{Public Speaking} \\
+  \textbullet~ \texttt{Organization} & \textbullet~ \texttt{Punctuality} \\
+  \textbullet~ \texttt{Adaptability} & \textbullet~ \texttt{Relationship Building} \\
+\end{tabular}
 
 
 
 
 
 
+        
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
 
 
-% -----------------------------------------------------------------------------------
-
-\newcommand{\simpleheader}[5]{
-\tikz[remember picture,overlay] {%
-\node[rectangle, fill=#1, anchor=north, minimum width=\paperwidth, minimum height=2.8 cm](header) at (current page.north){};%
-\node[draw=none, align=left](name) at (header) {%
-{\Huge \color{#5} #2 \textbf{#3} }%
-};%
-\node[draw=none, below](description) at (name.south) {\color{white}#4};% 
-}\vspace{-0.7cm}%
-}
 
 
-\newcommand{\infobubble}[4]{
-\scalebox{1.3}{
-\begin{tikzpicture}
-\draw[draw=#2,fill=#2] (0,0) circle (0.2cm);
-\node[] at (0,0) {\color{#3}\textbf{#1}};
-\node[right=0.2cm] at (0,0) {\texttt{#4}};
-\end{tikzpicture}
-}
-}
+
+
+\section*{Skills}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+
+    \bg{skilllabelcolour}{iconcolour}{Linux} &\barrule{0.55}{0.35em}{materialteal}\\
+    \bg{skilllabelcolour}{iconcolour}{GCP} &\barrule{0.55}{0.35em}{materialteal}\\
+    \bg{skilllabelcolour}{iconcolour}{MySQL} & \barrule{0.55}{0.35em}{materialteal}\\
+    \bg{skilllabelcolour}{iconcolour}{BigQuery} & \barrule{0.55}{0.35em}{materialteal}\\
+    \bg{skilllabelcolour}{iconcolour}{PostgresSQL} & \barrule{0.50}{0.35em}{materialteal}\\
+    \bg{skilllabelcolour}{iconcolour}{React} & \barrule{0.50}{0.35em}{materialteal}\\
+    \bg{skilllabelcolour}{iconcolour}{Docker}& \barrule{0.47}{0.35em}{materialgreen}\\
+    \bg{skilllabelcolour}{iconcolour}{MongoDB} & \barrule{0.47}{0.35em}{materialgreen}\\
+    \bg{skilllabelcolour}{iconcolour}{Firebase} & \barrule{0.47}{0.35em}{materialgreen}\\
+    \bg{skilllabelcolour}{iconcolour}{Networking} & \barrule{0.45}{0.35em}{materiallime}\\
+    \bg{skilllabelcolour}{iconcolour}{AWS} & \barrule{0.40}{0.35em}{materialamber} \\
+    \bg{skilllabelcolour}{iconcolour}{Azure} & \barrule{0.40}{0.35em}{materialamber} \\
+              
+\end{tabular}
+\end{minipage}
+
+
+
+
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+
+
+\end{paracol}
+
+\end{document}
