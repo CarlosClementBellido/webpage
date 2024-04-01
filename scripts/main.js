@@ -21,13 +21,12 @@ function showNextPost() {
     posts[previousIndex].classList.remove('active');
     posts[currentIndex].classList.add('active');
 
-    if (posts[currentIndex].parentElement.offsetHeight < posts[currentIndex].offsetHeight)
-        posts[currentIndex].parentElement.style.height = `${posts[currentIndex].offsetHeight}px`;
+    posts[currentIndex].parentNode.insertBefore(posts[currentIndex], posts[posts.length]);
+    posts[currentIndex].parentElement.style.height = `${posts[currentIndex].offsetHeight}px`;
 }
 
 function startIgAnimation() {
     posts = document.querySelectorAll('.t.post');
-    showNextPost();
     showNextPost();
     setInterval(showNextPost, 10000);
 }
@@ -112,22 +111,26 @@ function createListFunctionalities() {
 
 window.addEventListener('resize', checkResponsive);
 
-const responsiveElementIDsMobile = ["personal-info", "cv-container", "skills-container-left", "skills-container-right", "all-skills-container", "areas-of-specialization", "interests", "main-cv-container", "soft-skills", "languages-list", "curriculum-jobs", "about-me"];
+const responsiveElementIDsMobile = ["personal-info", "cv-container", "skills-container-left", "skills-container-right", "all-skills-container", "areas-of-specialization", "interests", "main-cv-container", "soft-skills", "languages-list", "curriculum-jobs", "about-me", "picture"];
 const responsiveElementIDsSmall = ["skills-container-left", "skills-container-right", "all-skills-container", "areas-of-specialization", "interests", "about-me"];
+const titles = document.querySelectorAll(".title");
 
 function checkResponsive() {
     console.log(window.innerWidth);
-    if (window.innerWidth < 1000) {
+    if (window.innerWidth < 950 && window.innerHeight >= 500) {
         responsiveElementIDsSmall.forEach(elemID => document.getElementById(elemID).classList.remove("mobile"));
         responsiveElementIDsMobile.forEach(elemID => document.getElementById(elemID).classList.add("mobile"));
+        titles.forEach(title => title.classList.add("mobile"));
     }
-    else if (window.innerWidth < 1700) {
+    else if (window.innerWidth < 1700 || window.innerHeight < 500) {
         responsiveElementIDsMobile.forEach(elemID => document.getElementById(elemID).classList.remove("mobile"));
         responsiveElementIDsSmall.forEach(elemID => document.getElementById(elemID).classList.add("mobile"));
+        titles.forEach(title => title.classList.remove("mobile"));
     }
     else {
         responsiveElementIDsMobile.forEach(elemID => document.getElementById(elemID).classList.remove("mobile"));
         responsiveElementIDsSmall.forEach(elemID => document.getElementById(elemID).classList.remove("mobile"));
+        titles.forEach(title => title.classList.remove("mobile"));
     }
 }
 
