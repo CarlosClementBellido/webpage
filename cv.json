@@ -28,7 +28,7 @@
     "areas_of_specialization": [
         {
             "name": "GCP",
-            "comment": "This is a test"
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla eget nisi efficitur fermentum vel in dolor. Mauris nec dolor eu justo suscipit euismod. Ut facilisis libero et facilisis tristique. In a nulla vel metus efficitur bibendum. Nam nec eros at nisi varius hendrerit. Sed ante augue, faucibus vel ipsum eu, tristique elementum mauris. Suspendisse tellus dui, scelerisque non nunc rutrum, vehicula ultrices tortor. Praesent nec tellus vel tellus pharetra condimentum vel quis est. Proin finibus aliquam purus, eu laoreet neque auctor non. Mauris non ullamcorper turpis, ac rhoncus risus. Morbi at nibh luctus, finibus enim vel, placerat ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras feugiat, metus in auctor consectetur, arcu ligula tincidunt felis, in maximus libero nunc in augue.<br><br>Aenean blandit vel ante quis bibendum. Sed ultrices viverra imperdiet. Nunc ut mollis elit. Quisque arcu est, auctor bibendum elit ac, sagittis luctus ante. Sed quis est nunc. Suspendisse arcu magna, viverra eu tellus non, viverra convallis lectus. Phasellus eleifend pellentesque lectus, ac aliquet risus."
         },
         {
             "name": ".NET",
@@ -206,51 +206,51 @@
     "soft_skills": [
         {
             "name": "Communication",
-            "comment": ""
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla eget nisi efficitur fermentum vel in dolor. Mauris nec dolor eu justo suscipit euismod. Ut facilisis libero et facilisis tristique. In a nulla vel metus efficitur bibendum. Nam nec eros at nisi varius hendrerit. Sed ante augue, faucibus vel ipsum eu, tristique elementum mauris. Suspendisse tellus dui, scelerisque non nunc rutrum, vehicula ultrices tortor. Praesent nec tellus vel tellus pharetra condimentum vel quis est. Proin finibus aliquam purus, eu laoreet neque auctor non. Mauris non ullamcorper turpis, ac rhoncus risus. Morbi at nibh luctus, finibus enim vel, placerat ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras feugiat, metus in auctor consectetur, arcu ligula tincidunt felis, in maximus libero nunc in augue.<br><br>Aenean blandit vel ante quis bibendum. Sed ultrices viverra imperdiet. Nunc ut mollis elit. Quisque arcu est, auctor bibendum elit ac, sagittis luctus ante. Sed quis est nunc. Suspendisse arcu magna, viverra eu tellus non, viverra convallis lectus. Phasellus eleifend pellentesque lectus, ac aliquet risus."
         },
         {
             "name": "Leadership",
-            "comment": ""
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla eget nisi efficitur fermentum vel in dolor. Mauris nec dolor eu justo suscipit euismod. Ut facilisis libero et facilisis tristique. In a nulla vel metus efficitur bibendum. Nam nec eros at nisi varius hendrerit. Sed ante augue, faucibus vel ipsum eu, tristique elementum mauris. Suspendisse tellus dui, scelerisque non nunc rutrum, vehicula ultrices tortor. Praesent nec tellus vel tellus pharetra condimentum vel quis est. Proin finibus aliquam purus, eu laoreet neque auctor non. Mauris non ullamcorper turpis, ac rhoncus risus. Morbi at nibh luctus, finibus enim vel, placerat ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras feugiat, metus in auctor consectetur, arcu ligula tincidunt felis, in maximus libero nunc in augue.<br><br>Aenean blandit vel ante quis bibendum. Sed ultrices viverra imperdiet. Nunc ut mollis elit. Quisque arcu est, auctor bibendum elit ac, sagittis luctus ante. Sed quis est nunc. Suspendisse arcu magna, viverra eu tellus non, viverra convallis lectus. Phasellus eleifend pellentesque lectus, ac aliquet risus."
         },
         {
             "name": "Collaboration",
-            "comment": ""
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla eget nisi efficitur fermentum vel in dolor. Mauris nec dolor eu justo suscipit euismod. Ut facilisis libero et facilisis tristique. In a nulla vel metus efficitur bibendum. Nam nec eros at nisi varius hendrerit. Sed ante augue, faucibus vel ipsum eu, tristique elementum mauris. Suspendisse tellus dui, scelerisque non nunc rutrum, vehicula ultrices tortor. Praesent nec tellus vel tellus pharetra condimentum vel quis est. Proin finibus aliquam purus, eu laoreet neque auctor non. Mauris non ullamcorper turpis, ac rhoncus risus. Morbi at nibh luctus, finibus enim vel, placerat ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras feugiat, metus in auctor consectetur, arcu ligula tincidunt felis, in maximus libero nunc in augue.<br><br>Aenean blandit vel ante quis bibendum. Sed ultrices viverra imperdiet. Nunc ut mollis elit. Quisque arcu est, auctor bibendum elit ac, sagittis luctus ante. Sed quis est nunc. Suspendisse arcu magna, viverra eu tellus non, viverra convallis lectus. Phasellus eleifend pellentesque lectus, ac aliquet risus."
         },
         {
             "name": "Teamwork",
-            "comment": ""
+            "comment": "This is a test"
         },
         {
             "name": "Problem-Solving",
-            "comment": ""
+            "comment": "This is a test"
         },
         {
             "name": "Decision Making",
-            "comment": ""
+            "comment": "This is a test"
         },
         {
             "name": "Effective Presentation",
-            "comment": ""
+            "comment": "This is a test"
         },
         {
             "name": "Public Speaking",
-            "comment": ""
+            "comment": "This is a test"
         },
         {
             "name": "Organization",
-            "comment": ""
+            "comment": "This is a test"
         },
         {
             "name": "Punctuality",
-            "comment": ""
+            "comment": "This is a test"
         },
         {
             "name": "Adaptability",
-            "comment": ""
+            "comment": "This is a test"
         },
         {
             "name": "Relationship Building",
-            "comment": ""
+            "comment": "This is a test"
         }
         
     ],

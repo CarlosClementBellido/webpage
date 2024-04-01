@@ -287,3 +287,77 @@ p#header-name {
     display: block;
     clear: both;
 }
+
+.column-list-2 {
+    column-count: 2;
+}
+
+.column-list-3 {
+    column-count: 3;
+}
+
+.comment {
+    position: absolute;
+    background-color: #111111;
+    color: #cccccc;
+    margin: 1%;
+    padding: 1em;
+    z-index: 9999 !important;
+    opacity: 0;
+    transition: opacity .2s ease;
+    left: -9999vw;
+    bottom: -9999vw;
+    display: inline;
+    text-align: right;
+    max-width: 50%;
+}
+
+.comment-hover {
+    cursor: pointer;
+}
+
+.comment-hover:hover>.comment {
+    opacity: 1;
+    left: auto;
+    bottom: auto;
+}
+
+li.comment-hover {
+    background-color: #4d4d4d;
+    color: #cccccc;
+    width: max-content;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.comment.active {
+    opacity: 1;
+    left: auto;
+    bottom: auto;
+    cursor: auto;
+}
+
+.comment>div {
+    padding-top: .5em;
+    text-align: justify;
+}
+
+.close-comment {
+    background-color: #ff5722;
+    color: #ccc;
+    font-size: 15px;
+    cursor: pointer;
+    border: solid 1px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: none;
+}
+
+.close-comment:hover {
+    color: #ff5722;
+    background-color: #ccc;
+}
+
+.close-comment.active {
+    display: inline-block;
+}
