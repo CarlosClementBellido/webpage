@@ -1,8 +1,13 @@
 "use strict";
 
 let cv;
+const picture = document.getElementById("picture");
+const header = document.getElementById("header");
 
 window.onload = () => {
+    window.scrollTo(0, 0);
+    checkResponsive();
+
     fetch("http://0.0.0.0:8001/cv.json")
         .then(resonse => resonse.json())
         .then(data => {
@@ -11,11 +16,15 @@ window.onload = () => {
             createTemplates();
             startIgAnimation();
             createListFunctionalities();
-            checkResponsive();
 
             document.getElementById("picture").addEventListener("click", async () => {
                 compileTeX();
             });
+
+            window.scrollTo(0, 0);
+
+            picture.classList.remove("loading");
+            header.classList.remove("loading");
         })
 };
 

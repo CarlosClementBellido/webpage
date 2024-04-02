@@ -7,12 +7,22 @@ body {
 
 #picture {
     border-radius: 50%;
-    width: 50%;
+    width: 25vh;
     margin: 1% 1% 1% 12%;
+    height: auto;
+    left: 0vw;
+    transition: all .5s ease;
+    position: relative;
+}
+
+#picture.loading {
+    left: 26vw;
+    width: 40vw;
+    transform: rotate(360deg);
 }
 
 #picture.mobile {
-    margin: 1% 25% 1% 25%;
+    margin: 1% 25% 1% 10%;
 }
 
 .left-title {
@@ -40,8 +50,16 @@ body {
     color: white;
 }
 
+#header.loading {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    color: transparent;
+}
+
 p#header-name {
     font-size: xx-large;
+    margin-top: 1em;
 }
 
 #cv-container {
@@ -55,10 +73,12 @@ p#header-name {
     justify-content: flex-start;
     margin-top: 2em;
     margin-right: 2em;
+    width: 62vw;
 }
 
 #main-cv-container.mobile {
     margin-right: 0em;
+    width: 100vw;
 }
 
 #cv-container.mobile {
@@ -88,7 +108,7 @@ p#header-name {
 
 #personal-info {
     background-color: #cccccc;
-    width: 30%;
+    width: 30vw;
     padding-left: 1em;
     margin-right: 2em;
     padding-right: 2em;
@@ -130,7 +150,7 @@ p#header-name {
 }
 
 .curriculum-job-date {
-    width: 11%;
+    width: 13%;
     align-self: start;
     padding-top: 1em;
     text-align: right;
@@ -315,7 +335,7 @@ p#header-name {
     top: 0;
     width: 100%;
     opacity: 0;
-    transition: opacity .2s ease-in-out, left .2s ease-in-out;
+    transition: opacity 2s ease-in-out, left 2s ease-in-out;
     text-align: -webkit-center;
 }
 
