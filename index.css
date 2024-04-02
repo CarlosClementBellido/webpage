@@ -315,7 +315,7 @@ p#header-name {
     top: 0;
     width: 100%;
     opacity: 0;
-    transition: opacity 2s ease-in-out, left 2s ease-in-out;
+    transition: opacity .2s ease-in-out, left .2s ease-in-out;
     text-align: -webkit-center;
 }
 

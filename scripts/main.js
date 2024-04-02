@@ -1,17 +1,22 @@
 "use strict";
 
-import cv from '../cv.json' assert { type: 'json' };
+let cv;
 
 window.onload = () => {
-    replaceSingleStrings();
-    createTemplates();
-    startIgAnimation();
-    createListFunctionalities();
-    checkResponsive();
+    fetch("http://0.0.0.0:8001/cv.json")
+        .then(resonse => resonse.json())
+        .then(data => {
+            cv = data;
+            replaceSingleStrings();
+            createTemplates();
+            startIgAnimation();
+            createListFunctionalities();
+            checkResponsive();
 
-    document.getElementById("picture").addEventListener("click", async () => {
-        compileTeX();
-    });
+            document.getElementById("picture").addEventListener("click", async () => {
+                compileTeX();
+            });
+        })
 };
 
 //#region Ig animation
